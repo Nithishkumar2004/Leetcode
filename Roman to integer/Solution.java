@@ -3,10 +3,10 @@ class Solution {
         int total = 0;
         int length = s.length();
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < length-1; i++) {
             int currentVal = getValue(s.charAt(i));
 
-            if (i + 1 < length && currentVal < getValue(s.charAt(i + 1))) {
+            if (currentVal < getValue(s.charAt(i + 1))) {
                 total -= currentVal;
             } else {
                 total += currentVal;
