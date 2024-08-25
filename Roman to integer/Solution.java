@@ -1,8 +1,7 @@
 class Solution {
     public int romanToInt(String s) {
-        int total = 0;
         int length = s.length();
-
+        int total = getValue(s.charAt(length-1));
         for (int i = 0; i < length-1; i++) {
             int currentVal = getValue(s.charAt(i));
 
