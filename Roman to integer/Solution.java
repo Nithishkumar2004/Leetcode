@@ -28,13 +28,4 @@ class Solution {
             default: return 0;  
         }
     }
-
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        System.out.println(sol.romanToInt("III"));     // Output: 3
-        System.out.println(sol.romanToInt("IV"));      // Output: 4
-        System.out.println(sol.romanToInt("IX"));      // Output: 9
-        System.out.println(sol.romanToInt("LVIII"));   // Output: 58
-        System.out.println(sol.romanToInt("MCMXCIV")); // Output: 1994
-    }
 }
